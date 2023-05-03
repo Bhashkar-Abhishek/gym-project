@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className={style.navDiv}>
 
         <div className={style.logo}>
-        <Link to='/' style={{ textDecoration: 'none' }}> <h1>GYM</h1> </Link>
+        <Link to='/'> <h1>GYM</h1> </Link>
       </div>
 
       <div >

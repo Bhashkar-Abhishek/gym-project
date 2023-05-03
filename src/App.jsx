@@ -7,13 +7,12 @@ import Registration from "./pages/Registration/Registration"
 import Subscription from "./pages/Subscription/Subscription"
 import Pricing from "./pages/Pricing/Pricing"
 import Program from "./pages/Program/Program"
-import Navbar from './component/Navbar/Navbar';
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home/>} />
         <Route path='/aboutUs' element={<AboutUs />} />
         <Route path='/training' element={<Training />} />
         <Route path='/program' element={<Program />} />
