@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Home/>} />
+        <Route path='/' element={<Home />} />
         <Route path='/aboutUs' element={<AboutUs />} />
         <Route path='/training' element={<Training />} />
         <Route path='/program' element={<Program />} />
@@ -22,7 +22,6 @@ function App() {
         <Route path='/pricing' element={<Pricing />} />
         <Route path='/*' element={"Error 404 Page not found"} />
       </Routes>
-
     </>
 
   );

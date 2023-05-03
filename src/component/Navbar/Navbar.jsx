@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import style from './Navbar.module.css'
+import Button from '@mui/material/Button';
 
 
 export default function Navbar() {
@@ -13,24 +14,23 @@ export default function Navbar() {
         <Link to='/'> <h1>GYM</h1> </Link>
       </div>
 
-      <div >
-        <ul className={style.linkDiv} >
+      <div className={style.linkDiv} >
+        {/* <ul className={style.linkDiv} > */}
 
-          <Link to='/aboutUs' ><li>About Us</li></Link>
-          <Link to='/program' ><li>Program</li></Link>
-          <Link to='/training'><li>Training</li></Link>
-          <Link to='/pricing'><li>Pricing</li></Link>
-          <Link to='/subscription'><li>Subscription</li></Link>
-          <Link to='/registration'><li>Registration</li></Link>
-        </ul>
+          <Link to='/aboutUs' >About Us</Link>
+          <Link to='/program' >Program</Link>
+          <Link to='/training'>Training</Link>
+          <Link to='/pricing'>Pricing</Link>
+          <Link to='/registration'>Registration</Link>
+        {/* </ul> */}
         
       </div>
 
-      <div>
-      <Link to='/login'> <button>login</button> </Link>
+      <div className={style.button}>
+      <Link to='/login'> <Button variant="contained">Login</Button></Link>
 
       </div>
-
+ 
     </div >
 
     </>
